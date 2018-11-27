@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp2.0</TargetFramework>
+		<UserSecretsId>0e4103c4-fbfa-4416-9285-3b543ca4e88b</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.0" />
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+		<DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Medit.PMS.Application\Medit.PMS.Application.csproj" />
+		<ProjectReference Include="..\Medit.PMS.EFCore\Medit.PMS.EFCore.csproj" />
+		<ProjectReference Include="..\Medit.PMS.Utility\Medit.PMS.Utility.csproj" />
+	</ItemGroup>
+
+</Project>

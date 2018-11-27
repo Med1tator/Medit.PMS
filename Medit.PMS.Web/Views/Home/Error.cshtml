@@ -1,0 +1,17 @@
+﻿
+@model ErrorModel
+@{
+    ViewData["Title"] = @Model.PageTitle;
+}
+
+
+<h1 class="text-danger">异常。</h1>
+<h2 class="text-danger">处理请求时发生异常。</h2>
+
+@if (string.IsNullOrEmpty(Model.Msg))
+{
+    <p>
+        <strong>异常信息：</strong>@Model.Msg
+    </p>
+}
+
